@@ -1,0 +1,6 @@
+controller\LibroController.class
+controller\userController.class
+model\Libro.class
+controller\CarritoController.class
+model\Producto.class
+model\usuarios.class

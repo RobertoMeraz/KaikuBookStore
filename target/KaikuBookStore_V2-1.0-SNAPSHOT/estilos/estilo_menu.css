@@ -1,0 +1,127 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23 nov 2024, 6:32:28 p.m.
+    Author     : rober
+*/
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --hover-color: #3498db;
+    --text-color: #ecf0f1;
+    --transition-speed: 0.3s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+}
+
+.menu-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    width: 250px;
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease;
+}
+
+aside a {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all var(--transition-speed) ease;
+    margin: 5px 0;
+}
+
+aside a:hover {
+    background-color: var(--hover-color);
+    padding-left: 30px;
+    transform: scale(1.02);
+}
+
+aside .titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 2px solid var(--hover-color);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+aside i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: var(--hover-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color var(--transition-speed);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 200px;
+    }
+
+    aside a {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .card {
+        margin: 20px;
+        max-width: none;
+    }
+}
