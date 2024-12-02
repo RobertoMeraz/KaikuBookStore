@@ -74,7 +74,14 @@
                     <h3>DANDADAN N.1</h3>
                     <div class="author">Yukinobu Tatsu</div>
                     <div class="price">$159.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="1">
+                        <input type="hidden" name="nombre" value="DANDADAN N.1">
+                        <input type="hidden" name="precio" value="159.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -82,7 +89,14 @@
                     <h3>JUJUTSU KAISEN N.1 </h3>
                     <div class="author">Gege Akutami</div>
                     <div class="price">$109.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="2">
+                        <input type="hidden" name="nombre" value="JUJUTSU KAISEN N.1">
+                        <input type="hidden" name="precio" value="109.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -90,7 +104,14 @@
                     <h3>DEMON SLAYER N.1</h3>
                     <div class="author">Koyoharu Gotouge</div>
                     <div class="price">$119.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="3">
+                        <input type="hidden" name="nombre" value="DEMON SLAYER N.1">
+                        <input type="hidden" name="precio" value="119.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -98,7 +119,14 @@
                     <h3>ONE PIECE N.1</h3>
                     <div class="author">Eiichiro Oda</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="4">
+                        <input type="hidden" name="nombre" value="ONE PIECE N.1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -106,7 +134,14 @@
                     <h3>NARUTO N.1</h3>
                     <div class="author">Masashi Kishimoto</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="5">
+                        <input type="hidden" name="nombre" value="NARUTO N.1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -114,7 +149,14 @@
                     <h3>BERSERK N.1</h3>
                     <div class="author">Hentaro Miura</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="6">
+                        <input type="hidden" name="nombre" value="BERSERK N.1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -122,7 +164,14 @@
                     <h3>MY HERO ACADEMIA N.1</h3>
                     <div class="author">Kohei Horikoshi</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="7">
+                        <input type="hidden" name="nombre" value="MY HERO ACADEMIA N.1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -130,7 +179,14 @@
                     <h3>NANA N.1</h3>
                     <div class="author">Ai Yazawa</div>
                     <div class="price">$129.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="8">
+                        <input type="hidden" name="nombre" value="NANA N.1">
+                        <input type="hidden" name="precio" value="129.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -138,7 +194,14 @@
                     <h3>DRAGON BALL N.1</h3>
                     <div class="author">Akira Toriyama</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="9">
+                        <input type="hidden" name="nombre" value="DRAGON BALL N.1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -146,7 +209,14 @@
                     <h3>BLEACH N.1l</h3>
                     <div class="author">Tite Kubo</div>
                     <div class="price">$338.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="10">
+                        <input type="hidden" name="nombre" value="BLEACH N.1">
+                        <input type="hidden" name="precio" value="338.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -154,7 +224,14 @@
                     <h3>RECORD OF RAGNAROK N.1</h3>
                     <div class="author">Shumatsu no Valkyrie</div>
                     <div class="price">$169.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="nombre" value="RECORD OF RAGNAROK N.1">
+                        <input type="hidden" name="precio" value="169.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -162,7 +239,14 @@
                     <h3>DEATH NOTE N. 1</h3>
                     <div class="author">Tsugumi Oba</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="12">
+                        <input type="hidden" name="nombre" value="DEATH NOTE N. 1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -170,7 +254,14 @@
                     <h3>RENT-A-GIRLFRIEND N.1</h3>
                     <div class="author">Reiji Miyajima</div>
                     <div class="price">$119.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="13">
+                        <input type="hidden" name="nombre" value="RENT-A-GIRLFRIEND N.1">
+                        <input type="hidden" name="precio" value="119.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -178,7 +269,14 @@
                     <h3>UZUMAKI N.1</h3>
                     <div class="author">Junji Ito</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="14">
+                        <input type="hidden" name="nombre" value="UZUMAKI N.1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -186,7 +284,14 @@
                     <h3>BLACK CLOVER N.1</h3>
                     <div class="author">Yuki Tabata</div>
                     <div class="price">$99.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="15">
+                        <input type="hidden" name="nombre" value="BLACK CLOVER N.1">
+                        <input type="hidden" name="precio" value="99.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
             </div>
 

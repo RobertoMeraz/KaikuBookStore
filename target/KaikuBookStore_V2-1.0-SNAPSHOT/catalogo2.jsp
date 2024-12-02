@@ -74,7 +74,14 @@
                     <h3>El morador de las tinieblas - Lovecraft</h3>
                     <div class="author">Gou Tanabe</div>
                     <div class="price">$318.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="1">
+                        <input type="hidden" name="nombre" value="El morador de las tinieblas - Lovecraft">
+                        <input type="hidden" name="precio" value="318.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -82,7 +89,14 @@
                     <h3>Star Wars. Colorea la galaxia</h3>
                     <div class="author">LucasfilmLTD</div>
                     <div class="price">$248.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="2">
+                        <input type="hidden" name="nombre" value="Star Wars. Colorea la galaxia">
+                        <input type="hidden" name="precio" value="248.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -90,17 +104,29 @@
                     <h3>México, la obra maestra del diablo.</h3>
                     <div class="author">Alberto Montt</div>
                     <div class="price">$248.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="3">
+                        <input type="hidden" name="nombre" value="México, la obra maestra del diablo">
+                        <input type="hidden" name="precio" value="248.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
-
-
 
                 <div class="book-card">
                     <a href="mandalorian.html"><img src="imagenes/mandalorian_2.jpg" alt="The mandalorian cuaderno galactico"></a>
                     <h3>The Mandalorian 2. Cuaderno Galáctico</h3>
                     <div class="author">Marí­a Eugenio Blanco</div>
                     <div class="price">$98.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="4">
+                        <input type="hidden" name="nombre" value="The Mandalorian 2. Cuaderno Galáctico">
+                        <input type="hidden" name="precio" value="98.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -108,7 +134,14 @@
                     <h3>Palabras para sanar</h3>
                     <div class="author">Rupi Kaur</div>
                     <div class="price">$368.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="5">
+                        <input type="hidden" name="nombre" value="Palabras para sanar">
+                        <input type="hidden" name="precio" value="368.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -116,7 +149,14 @@
                     <h3>Solo necesito un gato</h3>
                     <div class="author">Alberto Montt</div>
                     <div class="price">$268.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="6">
+                        <input type="hidden" name="nombre" value="Solo necesito un gato">
+                        <input type="hidden" name="precio" value="268.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -124,7 +164,14 @@
                     <h3>La camara lucida</h3>
                     <div class="author">Roland Barthes</div>
                     <div class="price">$209.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="7">
+                        <input type="hidden" name="nombre" value="La camara lucida">
+                        <input type="hidden" name="precio" value="209.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -132,7 +179,14 @@
                     <h3>Free Play</h3>
                     <div class="author">Stephen Nachmanovitch</div>
                     <div class="price">$299.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="8">
+                        <input type="hidden" name="nombre" value="Free Play">
+                        <input type="hidden" name="precio" value="299.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -140,7 +194,14 @@
                     <h3>La vida de las abejas</h3>
                     <div class="author">Maurice Maeterlinck</div>
                     <div class="price">$349.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="9">
+                        <input type="hidden" name="nombre" value="La vida de las abejas">
+                        <input type="hidden" name="precio" value="349.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -148,7 +209,14 @@
                     <h3>Gardel</h3>
                     <div class="author">Felipe Pigna</div>
                     <div class="price">$338.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="10">
+                        <input type="hidden" name="nombre" value="Gardel">
+                        <input type="hidden" name="precio" value="338.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -156,7 +224,14 @@
                     <h3>Hecha en México</h3>
                     <div class="author">Daniel Herranz | Paola Palazón Seguel</div>
                     <div class="price">$308.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="nombre" value="Hecha en México">
+                        <input type="hidden" name="precio" value="308.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -164,7 +239,14 @@
                     <h3>Mentiras cuánticas</h3>
                     <div class="author">Chris Ferrie</div>
                     <div class="price">$299.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="12">
+                        <input type="hidden" name="nombre" value="Mentiras cuánticas">
+                        <input type="hidden" name="precio" value="299.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -172,7 +254,14 @@
                     <h3>La guí­a completa de absolutamente todo</h3>
                     <div class="author">Adam Rutherford | Hannah Fry</div>
                     <div class="price">$329.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="13">
+                        <input type="hidden" name="nombre" value="La guí­a completa de absolutamente todo">
+                        <input type="hidden" name="precio" value="329.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -180,7 +269,14 @@
                     <h3>La ciencia del buen dormir</h3>
                     <div class="author">Dr. Javier Albares</div>
                     <div class="price">$298.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="14">
+                        <input type="hidden" name="nombre" value="La ciencia del buen dormir">
+                        <input type="hidden" name="precio" value="298.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
 
                 <div class="book-card">
@@ -188,7 +284,14 @@
                     <h3>Todas las muertes</h3>
                     <div class="author">Ricard Solé</div>
                     <div class="price">$239.00 MXN</div>
-                    <a href="#" class="add-to-cart">AÑADIR AL CARRITO</a>
+                    <form action="CarritoController" method="post">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" name="id" value="15">
+                        <input type="hidden" name="nombre" value="Todas las muertes">
+                        <input type="hidden" name="precio" value="239.00">
+                        <input type="hidden" name="cantidad" value="1">
+                        <button type="submit" class="add-to-cart">AÑADIR AL CARRITO</button>
+                    </form>
                 </div>
             </div>
 

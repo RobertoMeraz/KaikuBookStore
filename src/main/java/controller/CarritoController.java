@@ -40,29 +40,61 @@ public class CarritoController extends HttpServlet {
         }
     }
 
-    private void agregarProducto(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+   private void agregarProducto(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+    try {
+        // Obtener datos del formulario
         int id = Integer.parseInt(request.getParameter("id"));
         String nombre = request.getParameter("nombre");
         double precio = Double.parseDouble(request.getParameter("precio"));
         int cantidad = Integer.parseInt(request.getParameter("cantidad"));
 
+        if (cantidad <= 0 || precio < 0) {
+            throw new IllegalArgumentException("Cantidad o precio inválidos.");
+        }
+
         Producto producto = new Producto(id, nombre, precio, cantidad);
 
         HttpSession session = request.getSession();
         ArrayList<Producto> carrito = (ArrayList<Producto>) session.getAttribute("carrito");
-
         if (carrito == null) {
             carrito = new ArrayList<>();
         }
 
-        carrito.add(producto);
+        boolean productoExistente = false;
+        for (Producto p : carrito) {
+            if (p.getId() == id) {
+                p.setCantidad(p.getCantidad() + cantidad);
+                productoExistente = true;
+                break;
+            }
+        }
+        if (!productoExistente) {
+            carrito.add(producto);
+        }
+
         session.setAttribute("carrito", carrito);
 
-        request.setAttribute("message", "Producto agregado al carrito.");
+        double total = 0;
+        for (Producto p : carrito) {
+            total += p.getPrecio() * p.getCantidad();
+        }
+
+        request.setAttribute("carrito", carrito);
+        request.setAttribute("total", total);
+
+        RequestDispatcher rd = request.getRequestDispatcher("carrito.jsp");
+        rd.forward(request, response);
+    } catch (NumberFormatException e) {
+        request.setAttribute("message", "Error en el formato de datos numéricos: " + e.getMessage());
+        RequestDispatcher rd = request.getRequestDispatcher("catalogo.jsp");
+        rd.forward(request, response);
+    } catch (IllegalArgumentException e) {
+        request.setAttribute("message", "Datos inválidos: " + e.getMessage());
         RequestDispatcher rd = request.getRequestDispatcher("catalogo.jsp");
         rd.forward(request, response);
     }
+}
 
     private void verCarrito(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -73,6 +105,11 @@ public class CarritoController extends HttpServlet {
             request.setAttribute("message", "El carrito está vacío.");
         } else {
             request.setAttribute("carrito", carrito);
+            double total = 0;
+            for (Producto p : carrito) {
+                total += p.getPrecio() * p.getCantidad();
+            }
+            request.setAttribute("total", total);
         }
 
         RequestDispatcher rd = request.getRequestDispatcher("carrito.jsp");
@@ -87,7 +124,6 @@ public class CarritoController extends HttpServlet {
         if (carrito == null || carrito.isEmpty()) {
             request.setAttribute("message", "El carrito está vacío.");
         } else {
-            // Simulación de compra
             carrito.clear();
             session.setAttribute("carrito", carrito);
             request.setAttribute("message", "Compra realizada con éxito.");
@@ -111,6 +147,6 @@ public class CarritoController extends HttpServlet {
 
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "CarritoController maneja acciones del carrito de compras.";
     }
 }
