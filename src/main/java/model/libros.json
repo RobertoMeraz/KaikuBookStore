@@ -1,0 +1,16 @@
+[
+    {
+        "libroId": 1,
+        "titulo": "Harry Potter",
+        "autor": "JK Rowling",
+        "precio": "500",
+        "imagen": ""
+    },
+   {
+        "libroId": 2,
+        "titulo": "Mistborn",
+        "autor": "Brandon Sanderson",
+        "precio": "500",
+        "imagen": ""
+    }
+]
