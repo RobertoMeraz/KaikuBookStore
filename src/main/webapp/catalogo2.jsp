@@ -8,23 +8,27 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="imagenes/logo 1.png" alt="Book icon">
-                <span>KAIKUBOOKSTORE</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="acercade.html">Acerca de</a></li>
-                    <li><a href="editoriales.html">Editoriales</a></li>
-                    <li><a href="catalogo.jsp">Comprar</a></li>
-                    <li><a href="contacto.jsp">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="login.jsp">
-                <img src="imagenes/login.png" alt="login" height="30" width="30">
-            </a>
-        </header>
+        <a href="" class="logo">
+            <img src="imagenes/logo 1.png" alt="LOGO KAIKU">
+            <span>KAIKUBOOKSTORE</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.jsp">Menu</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="editoriales.html">Editoriales</a></li>
+                <li><a href="catalogo.jsp">Comprar</a></li>
+                <li><a href="carrito.jsp">Carrito</a></li>
+                <li><a href="contacto.jsp">Contacto</a></li>
+                
+                
+            </ul>
+        </nav>
+        <a href="login.jsp">
+            <img src="imagenes/login.png" alt="login" height="30" width="30">
+        </a>
+    </header>
 
         <main>
             <h1>Catálogo Completo</h1>
@@ -70,7 +74,7 @@
 
             <div class="catalog-grid">
                 <div class="book-card">
-                    <a href="lovecraft.html"><img src="imagenes/lovecraft_2.jpg" alt="lovecraft"></a>
+                    <a href="lovecraft.jsp"><img src="imagenes/lovecraft_2.jpg" alt="lovecraft"></a>
                     <h3>El morador de las tinieblas - Lovecraft</h3>
                     <div class="author">Gou Tanabe</div>
                     <div class="price">$318.00 MXN</div>
@@ -85,7 +89,7 @@
                 </div>
 
                 <div class="book-card">
-                    <a href="starwars.html"><img src="imagenes/colorealagalaxia_2.jpg" alt="star wars"></a>
+                    <a href="starwars.jsp"><img src="imagenes/colorealagalaxia_2.jpg" alt="star wars"></a>
                     <h3>Star Wars. Colorea la galaxia</h3>
                     <div class="author">LucasfilmLTD</div>
                     <div class="price">$248.00 MXN</div>
@@ -100,7 +104,7 @@
                 </div>
 
                 <div class="book-card">
-                    <a href="mexico.html"><img src="imagenes/mexicolaobra_2.jpg" alt="Mexico la obra maestra del diablo"></a>
+                    <a href="mexico.jsp"><img src="imagenes/mexicolaobra_2.jpg" alt="Mexico la obra maestra del diablo"></a>
                     <h3>México, la obra maestra del diablo.</h3>
                     <div class="author">Alberto Montt</div>
                     <div class="price">$248.00 MXN</div>
@@ -115,7 +119,7 @@
                 </div>
 
                 <div class="book-card">
-                    <a href="mandalorian.html"><img src="imagenes/mandalorian_2.jpg" alt="The mandalorian cuaderno galactico"></a>
+                    <a href="mandalorian.jsp"><img src="imagenes/mandalorian_2.jpg" alt="The mandalorian cuaderno galactico"></a>
                     <h3>The Mandalorian 2. Cuaderno Galáctico</h3>
                     <div class="author">Marí­a Eugenio Blanco</div>
                     <div class="price">$98.00 MXN</div>
@@ -130,7 +134,7 @@
                 </div>
 
                 <div class="book-card">
-                    <a href="palabras_sanar.html"><img src="imagenes/palabrasparasanar_2.jpg" alt="Palabras para sanar"></a>
+                    <a href="palabras_sanar.jsp"><img src="imagenes/palabrasparasanar_2.jpg" alt="Palabras para sanar"></a>
                     <h3>Palabras para sanar</h3>
                     <div class="author">Rupi Kaur</div>
                     <div class="price">$368.00 MXN</div>
@@ -145,7 +149,7 @@
                 </div>
 
                 <div class="book-card">
-                    <a href="solo_gato.html"><img src="imagenes/sologato_2.jpg" alt="Solo necesito un gato"></a>
+                    <a href="solo_gato.jsp"><img src="imagenes/sologato_2.jpg" alt="Solo necesito un gato"></a>
                     <h3>Solo necesito un gato</h3>
                     <div class="author">Alberto Montt</div>
                     <div class="price">$268.00 MXN</div>
@@ -160,7 +164,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/camaralucida_2.jpg" alt="La camara lucida">
+                    <a href="camara_lucida.jsp"><img src="imagenes/camaralucida_2.jpg" alt="La camara lucida"></a>
                     <h3>La camara lucida</h3>
                     <div class="author">Roland Barthes</div>
                     <div class="price">$209.00 MXN</div>
@@ -175,7 +179,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/freeplay_2.jpg" alt="Free Play">
+                    <a href="freeplay.jsp"><img src="imagenes/freeplay_2.jpg" alt="Free Play"></a>
                     <h3>Free Play</h3>
                     <div class="author">Stephen Nachmanovitch</div>
                     <div class="price">$299.00 MXN</div>
@@ -190,7 +194,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/vidaabejas_2.jpg" alt="La vida de las abajes">
+                    <a href="abejas.jsp"><img src="imagenes/vidaabejas_2.jpg" alt="La vida de las abajes"></a>
                     <h3>La vida de las abejas</h3>
                     <div class="author">Maurice Maeterlinck</div>
                     <div class="price">$349.00 MXN</div>
@@ -205,7 +209,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/gardel_2.jpg" alt="Gardel">
+                    <a href="gardel.jsp"><img src="imagenes/gardel_2.jpg" alt="Gardel"></a>
                     <h3>Gardel</h3>
                     <div class="author">Felipe Pigna</div>
                     <div class="price">$338.00 MXN</div>
@@ -220,7 +224,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/hechaenmexico_2.jpg" alt="Hecha en México">
+                    <a href="hecha_mexico.jsp"><img src="imagenes/hechaenmexico_2.jpg" alt="Hecha en México"></a>
                     <h3>Hecha en México</h3>
                     <div class="author">Daniel Herranz | Paola Palazón Seguel</div>
                     <div class="price">$308.00 MXN</div>
@@ -235,7 +239,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/mentirascuanticas_2.jpg" alt="Mentiras Cuanticas">
+                    <a href="mentiras_cuanticas.jsp"><img src="imagenes/mentirascuanticas_2.jpg" alt="Mentiras Cuanticas"></a>
                     <h3>Mentiras cuánticas</h3>
                     <div class="author">Chris Ferrie</div>
                     <div class="price">$299.00 MXN</div>
@@ -250,7 +254,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/guiatodo_2.jpg" alt="La guí­a completa de absolutamente todo">
+                    <a href="guia_todo.jsp"><img src="imagenes/guiatodo_2.jpg" alt="La guí­a completa de absolutamente todo"></a>
                     <h3>La guí­a completa de absolutamente todo</h3>
                     <div class="author">Adam Rutherford | Hannah Fry</div>
                     <div class="price">$329.00 MXN</div>
@@ -265,7 +269,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/buendormir_2.jpg" alt="La ciencia del buen dormir">
+                    <a href="buen_dormir.jsp"><img src="imagenes/buendormir_2.jpg" alt="La ciencia del buen dormir"></a>
                     <h3>La ciencia del buen dormir</h3>
                     <div class="author">Dr. Javier Albares</div>
                     <div class="price">$298.00 MXN</div>
@@ -280,7 +284,7 @@
                 </div>
 
                 <div class="book-card">
-                    <img src="imagenes/todaslasmuertes_2.jpg" alt="Todas las muertes">
+                    <a href="todas_muertes.jsp"><img src="imagenes/todaslasmuertes_2.jpg" alt="Todas las muertes"></a>
                     <h3>Todas las muertes</h3>
                     <div class="author">Ricard Solé</div>
                     <div class="price">$239.00 MXN</div>

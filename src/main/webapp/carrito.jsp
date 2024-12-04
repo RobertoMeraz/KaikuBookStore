@@ -9,23 +9,27 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="imagenes/logo 1.png" alt="Book icon">
-                <span>KAIKUBOOKSTORE</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="acercade.html">Acerca de</a></li>
-                    <li><a href="editoriales.html">Editoriales</a></li>
-                    <li><a href="catalogo.jsp">Comprar</a></li>
-                    <li><a href="contacto.jsp">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="login.jsp">
-                <img src="imagenes/login.png" alt="login" height="30" width="30">
-            </a>
-        </header>
+        <a href="" class="logo">
+            <img src="imagenes/logo 1.png" alt="LOGO KAIKU">
+            <span>KAIKUBOOKSTORE</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.jsp">Menu</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="editoriales.html">Editoriales</a></li>
+                <li><a href="catalogo.jsp">Comprar</a></li>
+                <li><a href="carrito.jsp">Carrito</a></li>
+                <li><a href="contacto.jsp">Contacto</a></li>
+                
+                
+            </ul>
+        </nav>
+        <a href="login.jsp">
+            <img src="imagenes/login.png" alt="login" height="30" width="30">
+        </a>
+    </header>
         <div class="container">
             <h1 class="text-center mb-4">Carrito de Compras</h1>
 
@@ -86,6 +90,9 @@
                     <input type="hidden" name="action" value="checkout">
                     <button type="submit" class="btn btn-primary">Realizar Compra</button>
                 </form>
+
+                <!-- Botón para regresar a la página anterior -->
+                <button onclick="history.back()" class="btn btn-secondary mt-2">Regresar</button>
             </div>
         </div>
     </body>

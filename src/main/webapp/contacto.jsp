@@ -8,17 +8,21 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="imagenes/logo 1.png" alt="Book icon">
+        <a href="" class="logo">
+            <img src="imagenes/logo 1.png" alt="LOGO KAIKU">
             <span>KAIKUBOOKSTORE</span>
-        </div>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.jsp">Menu</a></li>
                 <li><a href="acercade.html">Acerca de</a></li>
                 <li><a href="editoriales.html">Editoriales</a></li>
                 <li><a href="catalogo.jsp">Comprar</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.jsp">Carrito</a></li>
+                <li><a href="contacto.jsp">Contacto</a></li>
+                
+                
             </ul>
         </nav>
         <a href="login.jsp">

@@ -12,22 +12,26 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="imagenes/logo 1.png" alt="Book icon">
+            <a href="" class="logo">
+                <img src="imagenes/logo 1.png" alt="LOGO KAIKU">
                 <span>KAIKUBOOKSTORE</span>
-            </div>
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.jsp">Menu</a></li>
                     <li><a href="acercade.html">Acerca de</a></li>
                     <li><a href="editoriales.html">Editoriales</a></li>
                     <li><a href="catalogo.jsp">Comprar</a></li>
+                    <li><a href="carrito.jsp">Carrito</a></li>
                     <li><a href="contacto.jsp">Contacto</a></li>
+
+
                 </ul>
             </nav>
             <a href="login.jsp">
                 <img src="imagenes/login.png" alt="login" height="30" width="30">
-            </a>    
+            </a>
         </header>
         <%
             if (session.getAttribute("username") != null) {
@@ -39,21 +43,21 @@
                     Menú Principal
                 </a>
 
-                <a href="register.jsp">
-                    <i class="fa fa-user-plus" aria-hidden="true"></i>
-                    Alta de Usuario
+                <a href="catalogo.jsp">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    Comprar
+                </a>
+                <a href="carrito.jsp">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Ver carrito
                 </a>
                 <a href="removeUser.jsp">
                     <i class="fa fa-user-times" aria-hidden="true"></i>
-                    Baja de Usuario
+                    Eliminar cuenta
                 </a>
                 <a href="actualizarUsuario.jsp">
                     <i class="fa fa-pencil-square" aria-hidden="true"></i>
-                    Modificar Usuario
-                </a>
-                <a href="consulta.jsp">
-                    <i class="fa fa-binoculars" aria-hidden="true"></i>
-                    Consultar Usuarios
+                    Editar cuenta
                 </a>
                 <a href="login.jsp">
                     <i class="fa fa-sign-out" aria-hidden="true"></i>

@@ -1,6 +1,4 @@
-controller\LibroController.class
+model\usuarios.class
 controller\userController.class
-model\Libro.class
 controller\CarritoController.class
 model\Producto.class
-model\usuarios.class
